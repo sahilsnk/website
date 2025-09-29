@@ -69,14 +69,21 @@ export default function Index() {
                 </a>
               </div>
             </div>
-            <div className="hidden lg:block">
-              <div className="w-full h-96 bg-portfolio-text-light/10 rounded-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-portfolio-text-light/20 rounded-full mx-auto mb-4"></div>
-                  <p className="text-portfolio-text-light/60">Profile Image</p>
+              <div className="hidden lg:flex justify-center">
+                <div className="relative h-80 w-80 flex items-center justify-center">
+                  {/* Background box */}
+                  <div className="absolute inset-0 translate-x-4 translate-y-4 bg-portfolio-text-light/20 rounded-2xl"></div>
+
+                  {/* Profile image */}
+                  <div className="relative h-80 w-80 rounded-2xl overflow-hidden border-8 border-portfolio-dark">
+                    <img
+                      src="/images.webp"
+                      alt="Sahil Naik"
+                      className="h-full w-auto object-contain rounded-2xl"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
