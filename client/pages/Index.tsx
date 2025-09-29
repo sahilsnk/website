@@ -11,7 +11,7 @@ export default function Index() {
   {
     title: "Calorie Tracker",
     description: "An Android app built with Kotlin for tracking daily calorie intake. Features goal setting with notifications, offline mode, SQLite database storage, customized TableLayout UI, and nutritional summaries with breakdowns.",
-    image: "/calorie-tracker.svg", // replace with actual screenshot or placeholder
+    image: "/calorie-tracker.png", // replace with actual screenshot or placeholder
     tech: ["Kotlin", "Android", "SQLite", "Notifications", "Offline Support"],
     github: "https://github.com/sahilsnk/calorie_tracker",
     live: "#", // replace with Play Store link or demo URL if available
@@ -20,7 +20,7 @@ export default function Index() {
   {
     title: "Voice-Assisted Travel Query System",
     description: "A voice-based web application that allows users to query travel routes, bus schedules, and availability using natural speech. Built with React, Node.js, and MongoDB, it leverages voice recognition and speech parsing to streamline travel planning.",
-    image: "/voice-travel-query.svg", // replace with actual project screenshot
+    image: "/voice-travel-query.jpeg", // replace with actual project screenshot
     tech: ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Web Speech API"],
     github: "https://github.com/sahilsnk/Voice-Assisted-Travel-Query-System",
     live: "http://localhost:5173", // if deployed, replace with live URL
@@ -133,9 +133,14 @@ export default function Index() {
             {recentProjects.map((project, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="bg-portfolio-light p-6 rounded-xl border border-portfolio-dark/10 hover:shadow-lg transition-all duration-200 group-hover:transform group-hover:scale-105">
-                  <div className="h-48 bg-portfolio-dark/10 rounded-lg mb-6 flex items-center justify-center">
-                    <ExternalLink className="h-8 w-8 text-portfolio-dark/30" />
+                  <div className="h-48 bg-portfolio-dark/10 rounded-lg mb-6 overflow-hidden flex items-center justify-center">
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} screenshot`} 
+                      className="h-full w-full object-cover" 
+                    />
                   </div>
+
                   <h3 className="text-xl font-medium text-portfolio-dark mb-3">
                     {project.title}
                   </h3>
