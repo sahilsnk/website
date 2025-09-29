@@ -161,63 +161,74 @@ export default function Index() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-medium text-portfolio-dark mb-6">
-                About Me
-              </h2>
-              <div className="space-y-4 text-lg text-portfolio-dark/80 leading-relaxed">
-                <p>
-                  With over 5 years of experience in full-stack development, I specialize in creating 
-                  robust web applications that deliver exceptional user experiences.
-                </p>
-                <p>
-                  My passion lies in solving complex problems through clean, efficient code and 
-                  innovative design solutions. I believe in the power of technology to transform 
-                  businesses and improve lives.
-                </p>
-                <p>
-                  When I'm not coding, you can find me contributing to open-source projects, 
-                  mentoring aspiring developers, or exploring the latest in AI and machine learning.
-                </p>
-              </div>
-              <div className="mt-8">
-                <Link 
-                  to="/mentorship" 
-                  className="inline-flex items-center text-portfolio-dark font-medium hover:underline"
-                >
-                  Learn About My Mentorship Program
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-            <div className="bg-portfolio-dark/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-medium text-portfolio-dark mb-6">Quick Stats</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-portfolio-dark mb-2">50+</div>
-                  <div className="text-portfolio-dark/70">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-portfolio-dark mb-2">15+</div>
-                  <div className="text-portfolio-dark/70">Clients Satisfied</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-portfolio-dark mb-2">5+</div>
-                  <div className="text-portfolio-dark/70">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-portfolio-dark mb-2">20+</div>
-                  <div className="text-portfolio-dark/70">Code Snippets</div>
-                </div>
-              </div>
-            </div>
+{/* About Section */}
+<section className="py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 className="text-3xl md:text-4xl font-medium text-portfolio-dark mb-6">
+          About Me
+        </h2>
+        <div className="space-y-4 text-lg text-portfolio-dark/80 leading-relaxed">
+          <p>
+            I’m a passionate Computer Science engineer who thrives at the 
+            intersection of software engineering, AI/ML, and systems design. 
+            From building real-world projects like BuilderBot, VoIP systems, 
+            and cloud-native apps, to conducting research in exoplanet 
+            detection using CNNs, differentiable optics, and quantum ML, I 
+            continuously seek challenges that push boundaries.
+          </p>
+          <p>
+            Alongside research, I’ve deep-dived into OOP, Operating Systems, 
+            Networking, and design patterns — ensuring I combine strong 
+            fundamentals with practical engineering skills. I’ve also honed my 
+            problem-solving mindset by mastering LeetCode patterns across 
+            dynamic programming, graphs, and binary search.
+          </p>
+          <p>
+            Beyond coding, I enjoy mentoring peers, contributing to open 
+            discussions, and exploring emerging technologies like edge AI, 
+            quantum computing, and cloud automation. For me, tech is not just 
+            about building software — it’s about creating impactful, scalable, 
+            and intelligent solutions.
+          </p>
+
+        </div>
+        <div className="mt-8">
+          <Link 
+            to="/mentorship" 
+            className="inline-flex items-center text-portfolio-dark font-medium hover:underline"
+          >
+            Learn About My Mentorship Program
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </div>
+      </div>
+      <div className="bg-portfolio-dark/5 rounded-2xl p-8">
+        <h3 className="text-2xl font-medium text-portfolio-dark mb-6">Quick Stats</h3>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-portfolio-dark mb-2">10+</div>
+            <div className="text-portfolio-dark/70">Major Projects</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-portfolio-dark mb-2">500+</div>
+            <div className="text-portfolio-dark/70">LeetCode Problems Solved</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-portfolio-dark mb-2">4+</div>
+            <div className="text-portfolio-dark/70">Research Papers & Reviews</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-portfolio-dark mb-2">5+</div>
+            <div className="text-portfolio-dark/70">Years of Coding Experience</div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-portfolio-dark text-portfolio-text-light">
@@ -232,7 +243,7 @@ export default function Index() {
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <a 
-              href="mailto:hello@example.com" 
+              href="mailto:sahilsnaik00@gmail.com" 
               className="inline-flex items-center px-8 py-4 bg-portfolio-text-light text-portfolio-dark font-medium rounded-lg hover:bg-portfolio-text-light/90 transition-colors duration-200"
             >
               <Mail className="mr-3 h-5 w-5" />
@@ -240,7 +251,7 @@ export default function Index() {
             </a>
             <div className="flex items-center gap-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/sahilsnk" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 border border-portfolio-text-light/30 rounded-lg hover:bg-portfolio-text-light/10 transition-colors duration-200"
@@ -248,7 +259,7 @@ export default function Index() {
                 <Github className="h-6 w-6" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sahilsantoshnaik" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 border border-portfolio-text-light/30 rounded-lg hover:bg-portfolio-text-light/10 transition-colors duration-200"
