@@ -2,78 +2,73 @@ import { ExternalLink, Github } from "lucide-react";
 
 const Portfolio = () => {
   const projects = [
-    {
-      title: "E-commerce Platform",
-      description: "A comprehensive e-commerce solution built with modern web technologies. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      image: "/placeholder.svg",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      github: "https://github.com/example/ecommerce",
-      live: "https://example-ecommerce.com",
-      category: "Full Stack"
-    },
-    {
-      title: "AI-Powered Dashboard",
-      description: "An intelligent dashboard for data visualization and machine learning model management. Includes real-time analytics, model deployment, and performance monitoring.",
-      image: "/placeholder.svg",
-      tech: ["Next.js", "Python", "TensorFlow", "Docker", "GCP"],
-      github: "https://github.com/example/ai-dashboard",
-      live: "https://example-dashboard.com",
-      category: "AI/ML"
-    },
-    {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, bill payments, and investment tracking.",
-      image: "/placeholder.svg",
-      tech: ["React Native", "Node.js", "MongoDB", "JWT", "Biometric API"],
-      github: "https://github.com/example/banking-app",
-      live: "https://example-banking.com",
-      category: "Mobile"
-    },
-    {
-      title: "Real-time Chat Platform",
-      description: "A scalable chat platform supporting multiple rooms, file sharing, voice messages, and video calls. Built for high-performance real-time communication.",
-      image: "/placeholder.svg",
-      tech: ["Socket.io", "React", "Node.js", "Redis", "WebRTC"],
-      github: "https://github.com/example/chat-platform",
-      live: "https://example-chat.com",
-      category: "Real-time"
-    },
-    {
-      title: "Project Management Tool",
-      description: "Comprehensive project management solution with task tracking, team collaboration, time management, and reporting features.",
-      image: "/placeholder.svg",
-      tech: ["Vue.js", "Express", "MySQL", "GraphQL", "Docker"],
-      github: "https://github.com/example/project-manager",
-      live: "https://example-pm.com",
-      category: "Productivity"
-    },
-    {
-      title: "Blockchain Voting System",
-      description: "Secure and transparent voting system built on blockchain technology. Ensures vote integrity and provides real-time election results.",
-      image: "/placeholder.svg",
-      tech: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
-      github: "https://github.com/example/blockchain-voting",
-      live: "https://example-voting.com",
-      category: "Blockchain"
-    }
+  {
+    title: "Docker AI Image Classifier",
+    description: "An AI-powered image classification web application built with Flask and MobileNetV2. Users can upload images which are classified using a pre-trained deep learning model. The app is containerized with Docker and deployed on Render with a CI/CD pipeline.",
+    image: "/docker-ai-image-classifier.svg", // replace with your actual project image
+    tech: ["Flask", "TensorFlow", "Keras", "Docker", "HTML", "CSS", "GitHub Actions", "Render"],
+    github: "https://github.com/sahilsnk/docker-ai-image-classifier",
+    live: "https://docker-ai-image-classifier.onrender.com",
+    category: "Machine Learning / Full Stack"
+  },
+  {
+    title: "Voice-Assisted Travel Query System",
+    description: "A voice-based web application that allows users to query travel routes, bus schedules, and availability using natural speech. Built with React, Node.js, and MongoDB, it leverages voice recognition and speech parsing to streamline travel planning.",
+    image: "/voice-travel-query.svg", // replace with actual project screenshot
+    tech: ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Web Speech API"],
+    github: "https://github.com/sahilsnk/Voice-Assisted-Travel-Query-System",
+    live: "http://localhost:5173", // if deployed, replace with live URL
+    category: "Full Stack / AI"
+  },
+  {
+    title: "RVCE AI Chatbot",
+    description: "Enhanced AI chatbot fine-tuned with RVCE-specific data using LLM techniques to improve accuracy, relevance, and responsiveness. Continuously tested and refined for optimal user experience.",
+    image: "/rvce-chatbot.svg", // replace with actual screenshot or placeholder
+    tech: ["Python", "LLM Fine-Tuning", "OpenAI API", "JSONL Data", "Machine Learning"],
+    github: "https://github.com/sahilsnk/RVCE_AI_CHATBOT",
+    live: "#", // replace with deployed URL if available
+    category: "AI / Chatbot"
+  },
+  {
+    title: "Calorie Tracker",
+    description: "An Android app built with Kotlin for tracking daily calorie intake. Features goal setting with notifications, offline mode, SQLite database storage, customized TableLayout UI, and nutritional summaries with breakdowns.",
+    image: "/calorie-tracker.svg", // replace with actual screenshot or placeholder
+    tech: ["Kotlin", "Android", "SQLite", "Notifications", "Offline Support"],
+    github: "https://github.com/sahilsnk/calorie_tracker",
+    live: "#", // replace with Play Store link or demo URL if available
+    category: "Mobile App"
+  },
+  {
+    title: "ASTLineMapper",
+    description: "A Clang-based CLI tool that visualizes and explains C++ Abstract Syntax Trees (ASTs) with AI-powered annotations. It helps understand compiler interpretations and complex code structures efficiently.",
+    image: "/astlinemapper.svg", // replace with actual screenshot or placeholder
+    tech: ["C++", "Clang", "Python", "Groq API", "CLI Tool", "CMake"],
+    github: "https://github.com/sahilsnk/ASTLineMapper",
+    live: "#", // CLI tool, so no live demo
+    category: "Developer Tool"
+  }
   ];
 
   return (
     <div className="min-h-screen bg-portfolio-light">
       {/* Hero Section */}
-      <section className="bg-portfolio-dark text-portfolio-text-light py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-medium mb-6">
-              My Portfolio
-            </h1>
-            <p className="text-xl text-portfolio-text-light/80 max-w-3xl mx-auto">
-              A collection of projects that showcase my skills in full-stack development, 
-              AI integration, and creative problem-solving across various technologies and industries.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="bg-portfolio-dark text-portfolio-text-light py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <h1 className="text-4xl md:text-6xl font-medium mb-6">
+        My Portfolio
+      </h1>
+      <p className="text-xl text-portfolio-text-light/80 max-w-3xl mx-auto">
+        A showcase of my journey as a software engineer—building scalable full-stack applications, 
+        exploring the frontiers of AI and machine learning, and applying technology creatively to solve 
+        real-world problems. Hands-on projects like cloud-based platforms, IoT systems, and real-time communication tools, these works reflect both 
+        cloud-based platforms, IoT systems, and real-time communication tools, these works reflect both 
+        my technical depth and curiosity to push boundaries.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Grid */}
       <section className="py-20">

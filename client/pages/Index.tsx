@@ -3,29 +3,38 @@ import { Link } from "react-router-dom";
 
 export default function Index() {
   const skills = [
-    "React", "TypeScript", "Node.js", "Python", "AWS", "Docker",
-    "GraphQL", "PostgreSQL", "TailwindCSS", "Next.js"
+    "AI & Machine Learning", "Networking", "OOP", "Operating Systems",
+    "TypeScript", "Node.js", "Python", "AWS", "Docker", "Next.js",
   ];
 
   const recentProjects = [
-    {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with React and Node.js",
-      tech: ["React", "Node.js", "PostgreSQL"],
-      link: "/portfolio"
-    },
-    {
-      title: "AI Dashboard",
-      description: "Modern dashboard for AI model management and monitoring",
-      tech: ["Next.js", "Python", "TensorFlow"],
-      link: "/portfolio"
-    },
-    {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric auth",
-      tech: ["React Native", "Node.js", "AWS"],
-      link: "/portfolio"
-    }
+  {
+    title: "Calorie Tracker",
+    description: "An Android app built with Kotlin for tracking daily calorie intake. Features goal setting with notifications, offline mode, SQLite database storage, customized TableLayout UI, and nutritional summaries with breakdowns.",
+    image: "/calorie-tracker.svg", // replace with actual screenshot or placeholder
+    tech: ["Kotlin", "Android", "SQLite", "Notifications", "Offline Support"],
+    github: "https://github.com/sahilsnk/calorie_tracker",
+    live: "#", // replace with Play Store link or demo URL if available
+    category: "Mobile App"
+  },
+  {
+    title: "Voice-Assisted Travel Query System",
+    description: "A voice-based web application that allows users to query travel routes, bus schedules, and availability using natural speech. Built with React, Node.js, and MongoDB, it leverages voice recognition and speech parsing to streamline travel planning.",
+    image: "/voice-travel-query.svg", // replace with actual project screenshot
+    tech: ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Web Speech API"],
+    github: "https://github.com/sahilsnk/Voice-Assisted-Travel-Query-System",
+    live: "http://localhost:5173", // if deployed, replace with live URL
+    category: "Full Stack / AI"
+  },
+  {
+    title: "Docker AI Image Classifier",
+    description: "An AI-powered image classification web application built with Flask and MobileNetV2. Users can upload images which are classified using a pre-trained deep learning model. The app is containerized with Docker and deployed on Render with a CI/CD pipeline.",
+    image: "/docker-ai-image-classifier.svg", // replace with your actual project image
+    tech: ["Flask", "TensorFlow", "Keras", "Docker", "HTML", "CSS", "GitHub Actions", "Render"],
+    github: "https://github.com/sahilsnk/docker-ai-image-classifier",
+    live: "https://docker-ai-image-classifier.onrender.com",
+    category: "Machine Learning / Full Stack"
+  }
   ];
 
   return (
@@ -36,12 +45,14 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-medium leading-tight mb-6">
-                Full Stack Developer &amp; Creative Technologist
+                Full Stack Developer &amp; AI-Driven Technologist
               </h1>
               <p className="text-xl text-portfolio-text-light/80 mb-8 leading-relaxed">
-                I craft digital experiences that bridge the gap between design and technology. 
-                Specializing in modern web applications, AI integration, and scalable solutions.
+                I build scalable web applications and intelligent systems, blending modern 
+                development with cloud, AI, and emerging technologies. Skilled in Kotlin, 
+                Java, Python, and AWS, I create solutions that are both robust and innovative.
               </p>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   to="/portfolio" 
