@@ -77,7 +77,7 @@ export default function Index() {
                   {/* Profile image */}
                   <div className="relative h-80 w-80 rounded-2xl overflow-hidden border-8 border-portfolio-dark">
                     <img
-                      src="/images.webp"
+                      src="/profile.webp"
                       alt="Sahil Naik"
                       className="h-full w-auto object-contain rounded-2xl"
                     />

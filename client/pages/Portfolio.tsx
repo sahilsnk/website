@@ -14,25 +14,16 @@ const Portfolio = () => {
   {
     title: "Voice-Assisted Travel Query System",
     description: "A voice-based web application that allows users to query travel routes, bus schedules, and availability using natural speech. Built with React, Node.js, and MongoDB, it leverages voice recognition and speech parsing to streamline travel planning.",
-    image: "/voice-travel-query.svg", // replace with actual project screenshot
+    image: "/voice-travel-query.jpeg", // replace with actual project screenshot
     tech: ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Web Speech API"],
     github: "https://github.com/sahilsnk/Voice-Assisted-Travel-Query-System",
     live: "http://localhost:5173", // if deployed, replace with live URL
     category: "Full Stack / AI"
   },
   {
-    title: "RVCE AI Chatbot",
-    description: "Enhanced AI chatbot fine-tuned with RVCE-specific data using LLM techniques to improve accuracy, relevance, and responsiveness. Continuously tested and refined for optimal user experience.",
-    image: "/rvce-chatbot.svg", // replace with actual screenshot or placeholder
-    tech: ["Python", "LLM Fine-Tuning", "OpenAI API", "JSONL Data", "Machine Learning"],
-    github: "https://github.com/sahilsnk/RVCE_AI_CHATBOT",
-    live: "#", // replace with deployed URL if available
-    category: "AI / Chatbot"
-  },
-  {
     title: "Calorie Tracker",
     description: "An Android app built with Kotlin for tracking daily calorie intake. Features goal setting with notifications, offline mode, SQLite database storage, customized TableLayout UI, and nutritional summaries with breakdowns.",
-    image: "/calorie-tracker.svg", // replace with actual screenshot or placeholder
+    image: "/calorie-tracker.png", // replace with actual screenshot or placeholder
     tech: ["Kotlin", "Android", "SQLite", "Notifications", "Offline Support"],
     github: "https://github.com/sahilsnk/calorie_tracker",
     live: "#", // replace with Play Store link or demo URL if available
@@ -41,11 +32,20 @@ const Portfolio = () => {
   {
     title: "ASTLineMapper",
     description: "A Clang-based CLI tool that visualizes and explains C++ Abstract Syntax Trees (ASTs) with AI-powered annotations. It helps understand compiler interpretations and complex code structures efficiently.",
-    image: "/astlinemapper.svg", // replace with actual screenshot or placeholder
+    image: "/astlinemapper.jpg", // replace with actual screenshot or placeholder
     tech: ["C++", "Clang", "Python", "Groq API", "CLI Tool", "CMake"],
     github: "https://github.com/sahilsnk/ASTLineMapper",
     live: "#", // CLI tool, so no live demo
     category: "Developer Tool"
+  },
+  {
+    title: "RVCE AI Chatbot",
+    description: "Enhanced AI chatbot fine-tuned with RVCE-specific data using LLM techniques to improve accuracy, relevance, and responsiveness. Continuously tested and refined for optimal user experience.",
+    image: "/rvce-chatbot.png", // replace with actual screenshot or placeholder
+    tech: ["Python", "LLM Fine-Tuning", "OpenAI API", "JSONL Data", "Machine Learning"],
+    github: "https://github.com/sahilsnk/RVCE_AI_CHATBOT",
+    live: "#", // replace with deployed URL if available
+    category: "AI / Chatbot"
   }
   ];
 
@@ -78,9 +78,12 @@ const Portfolio = () => {
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-portfolio-dark/10 hover:shadow-lg transition-shadow duration-300">
                 {/* Project Image */}
                 <div className="h-64 bg-portfolio-dark/5 flex items-center justify-center">
-                  <div className="text-portfolio-dark/30 text-center">
-                    <ExternalLink className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Project Screenshot</p>
+                  <div className="h-64 bg-portfolio-dark/5 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} Screenshot`} 
+                      className="h-full w-full object-cover" 
+                    />
                   </div>
                 </div>
                 
