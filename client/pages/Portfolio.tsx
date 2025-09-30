@@ -17,7 +17,7 @@ const Portfolio = () => {
     image: "/voice-travel-query.jpeg", // replace with actual project screenshot
     tech: ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Web Speech API"],
     github: "https://github.com/sahilsnk/Voice-Assisted-Travel-Query-System",
-    live: "http://localhost:5173", // if deployed, replace with live URL
+    live: "#", // if deployed, replace with live URL
     category: "Full Stack / AI"
   },
   {
@@ -102,14 +102,18 @@ const Portfolio = () => {
                       >
                         <Github className="h-5 w-5" />
                       </a>
-                      <a 
-                        href={project.live} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="p-2 text-portfolio-dark/60 hover:text-portfolio-dark transition-colors duration-200"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </a>
+
+                        {/* Live button only if valid */}
+                        {project.live && project.live !== "#" && (
+                          <a 
+                            href={project.live} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="p-2 text-portfolio-dark/60 hover:text-portfolio-dark transition-colors duration-200"
+                          >
+                            <ExternalLink className="h-5 w-5" />
+                          </a>
+                        )}
                     </div>
                   </div>
                   
