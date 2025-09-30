@@ -9,7 +9,7 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
-   // { name: "Snippets", path: "/snippets" },
+    //{ name: "Snippets", path: "/snippets" },
     //{ name: "Mentorship", path: "/mentorship" },
   ];
 
@@ -24,8 +24,13 @@ const Navigation = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-xl font-medium">
-              Portfolio
-            </Link>
+              {{
+                    "/": "Home",
+                    "/portfolio": "Portfolio",
+                    "/snippets": "Snippets",
+                    "/mentorship": "Mentorship",
+                  }[location.pathname] || "Portfolio"}
+              </Link>
           </div>
 
           {/* Desktop Navigation */}
