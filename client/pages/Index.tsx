@@ -131,7 +131,7 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentProjects.map((project, index) => (
-              <div key={index} className="group cursor-pointer">
+              <a key={index} href={project.github} target="_blank" rel="noopener noreferrer" className="group cursor-pointer block">
                 <div className="bg-portfolio-light p-6 rounded-xl border border-portfolio-dark/10 hover:shadow-lg transition-all duration-200 group-hover:transform group-hover:scale-105">
                   <div className="h-48 bg-portfolio-dark/10 rounded-lg mb-6 overflow-hidden flex items-center justify-center">
                     <img 
@@ -155,7 +155,7 @@ export default function Index() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
