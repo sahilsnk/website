@@ -21,7 +21,7 @@ export default function useResumeEasterEgg() {
       // Easter egg: trigger resume download
       const link = document.createElement("a");
       link.href = "/SahilNaik_Resume.pdf";
-      link.download = "SahilNaik_Resume.pdf";
+     // link.download = "SahilNaik_Resume.pdf";
       link.click();
 
       // optional: show hidden input for future gimmicks
