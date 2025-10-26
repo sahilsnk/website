@@ -243,9 +243,13 @@ export default function Index() {
             <h2 className="text-3xl md:text-4xl font-medium mb-4">
               Let's Work Together
             </h2>
-            <p className="text-xl text-portfolio-text-light/80 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your project and create something amazing.
-            </p>
+  <p className="text-xl text-portfolio-text-light/80 max-w-2xl mx-auto">
+    Ready to bring your ideas to life? Let's discuss your project and create something amazing.
+  </p>
+  <hr className="my-8 border-portfolio-text-light/30 w-1/2 mx-auto" />
+  <p className="text-xl text-portfolio-text-light/80 max-w-2xl mx-auto">
+    Want to see my resume? Just type <strong>resume</strong>
+  </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <a 

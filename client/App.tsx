@@ -27,7 +27,7 @@ function useResumeShortcut() {
         if (buffer.endsWith("resume")) {
           const link = document.createElement("a");
           link.href = "/SahilNaik_Resume.pdf";
-          link.download = "SahilNaik_Resume.pdf";
+          //link.download = "SahilNaik_Resume.pdf";
           link.click();
           buffer = "";
         }
