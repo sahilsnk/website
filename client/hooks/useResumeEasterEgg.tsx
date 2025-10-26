@@ -30,7 +30,7 @@ export default function useResumeEasterEgg() {
     if (value.includes("resume")) {
       const link = document.createElement("a");
       link.href = "/SahilNaik_Resume.pdf";
-      link.download = "SahilNaik_Resume.pdf";
+      //link.download = "SahilNaik_Resume.pdf";
       link.click();
 
       e.target.value = "";
