@@ -11,6 +11,8 @@ import Index from "./pages/Index";
 import Portfolio from "./pages/Portfolio";
 import Mentorship from "./pages/Mentorship";
 import NotFound from "./pages/NotFound";
+import useResumeEasterEgg from "./hooks/useResumeEasterEgg";
+
 
 const queryClient = new QueryClient();
 
@@ -41,12 +43,13 @@ function useResumeShortcut() {
 
 const App = () => {
   useResumeShortcut(); // ✅ activates globally
-
+const EasterEgg = useResumeEasterEgg();
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        {EasterEgg}
         <BrowserRouter>
           <Layout>
             <Routes>
